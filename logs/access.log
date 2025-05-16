@@ -1,0 +1,7 @@
+127.0.0.1 - - [30/Apr/2025:18:39:37 +0530] "GET / HTTP/1.1" 200 615 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+127.0.0.1 - - [30/Apr/2025:18:39:37 +0530] "GET /favicon.ico HTTP/1.1" 404 555 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+127.0.0.1 - - [30/Apr/2025:18:41:49 +0530] "GET / HTTP/1.1" 200 615 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.3624"
+127.0.0.1 - - [30/Apr/2025:18:42:03 +0530] "GET /nonexistent HTTP/1.1" 404 153 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.3624"
+127.0.0.1 - - [30/Apr/2025:19:21:39 +0530] "GET / HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+127.0.0.1 - - [08/May/2025:09:00:01 +0530] "GET / HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+127.0.0.1 - - [08/May/2025:09:00:02 +0530] "GET /favicon.ico HTTP/1.1" 404 555 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
