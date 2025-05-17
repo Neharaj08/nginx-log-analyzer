@@ -1,21 +1,11 @@
 pipeline {
-    agent {
-        docker {
-            image 'neharaj08/nginx-log-analyzer:latest'
-            args '-v /var/run/docker.sock:/var/run/docker.sock'
-        }
-    }
+    agent any
 
     stages {
-        stage('Clone Repo') {
+        stage('Pull and Run Image') {
             steps {
-                git branch: 'main', url: 'https://github.com/Neharaj08/nginx-log-analyzer.git'
-            }
-        }
-
-        stage('Run Analyzer') {
-            steps {
-                sh './nginx-log-analyzer.sh'
+                sh 'docker pull neharaj08/nginx-log-analyzer:latest'
+                sh 'docker run --rm neharaj08/nginx-log-analyzer:latest'
             }
         }
     }
