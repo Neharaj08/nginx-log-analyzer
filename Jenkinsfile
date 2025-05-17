@@ -2,6 +2,12 @@ pipeline {
     agent any
 
     stages {
+        stage('Clone Repo') {
+            steps {
+                git 'https://github.com/Neharaj08/nginx-log-analyzer.git'
+            }
+        }
+
         stage('Build Docker Image') {
             steps {
                 script {
