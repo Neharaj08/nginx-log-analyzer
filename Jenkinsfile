@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'neharaj08/nginx-log-analyzer:latest'
+            args '-v /var/run/docker.sock:/var/run/docker.sock'
+        }
+    }
 
     stages {
         stage('Clone Repo') {
@@ -8,19 +13,9 @@ pipeline {
             }
         }
 
-        stage('Build Docker Image') {
-            steps {
-                script {
-                    docker.build('nginx-log-analyzer')
-                }
-            }
-        }
-
         stage('Run Analyzer') {
             steps {
-                script {
-                    docker.image('nginx-log-analyzer').run('--rm')
-                }
+                sh './nginx-log-analyzer.sh'
             }
         }
     }
