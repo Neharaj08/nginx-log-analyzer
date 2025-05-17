@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/Neharaj08/nginx-log-analyzer.git'
+                git branch: 'main', url: 'https://github.com/Neharaj08/nginx-log-analyzer.git'
             }
         }
 
